@@ -18,3 +18,9 @@ QT += widgets
 
 # Input
 SOURCES += gui.cpp
+
+CONFIG(debug, debug|release) {
+    message("debug mode")
+}else {
+    message("release mode")
+}
